@@ -4,6 +4,10 @@
 	font-family: 'Source Sans Pro', 'sans-serif';
 }
 
+.sidebar ul{
+    padding: 0;
+}
+
 .sidebar ul .list-group-item{
     position: relative;
     display: block;
@@ -39,4 +43,8 @@
 
 .modify .reg-header{
     border-bottom: 1px solid #ddd;
+}
+
+.modify .user-form{
+    margin: 20px 0;
 }
