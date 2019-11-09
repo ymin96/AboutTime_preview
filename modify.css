@@ -4,6 +4,10 @@
 	font-family: 'Source Sans Pro', 'sans-serif';
 }
 
+.sidebar ul{
+    margin-top: 20px;
+}
+
 .sidebar ul .list-group-item{
     position: relative;
     display: block;
