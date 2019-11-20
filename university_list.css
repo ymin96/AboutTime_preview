@@ -13,7 +13,13 @@
     border-bottom: 1px dotted #e4e9f0;
 }
 
-.university_list a{
+
+.university_list .reg-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.university_list .university a{
     font-size: 14px;
     font-weight: bold;
     text-shadow: 0.3px 0.3px 0.3px gray;
@@ -23,7 +29,7 @@
     padding: 0 15px;
 }
 
-.university_list .btn:hover{
+.university_list .university .btn:hover{
     animation-name: btn-animation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
