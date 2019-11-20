@@ -9,7 +9,7 @@
 
 .university_list .headline{
     display:block;
-    margin: 10px 0 25px 0;
+    margin: 10px 0 40px 0;
     border-bottom: 1px dotted #e4e9f0;
 }
 
@@ -27,6 +27,7 @@
 
 .university_list .university{
     padding: 0 15px;
+    margin-bottom: 25px;
 }
 
 .university_list .university .btn:hover{
