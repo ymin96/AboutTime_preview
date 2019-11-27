@@ -1,0 +1,36 @@
+.navbar{
+    margin-bottom: 0px;
+}
+
+.university_info h2{
+    color:#666;
+    margin: 15px 0px;
+}
+
+.university_info .breadcrumbs{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.university_info .breadcrumbs ul{
+    margin-top: 11px;
+    margin-bottom: 10px;
+}
+
+.university_info .headline a{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid #0076C0;
+    padding-bottom: 5px;
+    padding-top:5px;
+    margin:0 0 -2px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.university_info .headline{
+    display:block;
+    margin: 10px 0 0 0;
+    border-bottom: 1px dotted #e4e9f0;
+}
