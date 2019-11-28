@@ -4,11 +4,16 @@
 
 .university_list h2{
     color:#666;
+    margin: 15px 0;
 }
 
 .university_list .breadcrumbs{
     margin-bottom: 20px;
     border-bottom: 1px solid #AAAAAA;
+}
+
+.university_list .breadcrumbs .input-group{
+    margin: 15px 0;
 }
 
 .university_list .reg-header h1{

@@ -2,10 +2,16 @@
     margin-bottom: 0px;
 }
 
-.university_info h2{
-    color:#666;
+.university_info #title{
     margin: 15px 0px;
+    font-size:30px;
 }
+
+.university_info #title a{
+    text-decoration: none;
+    color:#666;
+}
+
 
 .university_info .breadcrumbs{
     margin-bottom: 20px;
