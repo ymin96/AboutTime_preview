@@ -1,0 +1,19 @@
+.board_view .board-title h3{
+    margin: 15px 0;
+}
+
+.board_view .comment-box{
+    margin-bottom: 15px;
+}
+
+.board_view .comment-box .comment-header{
+    border: 1px solid rgb(211, 211, 211);
+    padding-left: 15px;
+    background-color: #EEE;
+    color: #555555;
+}
+
+.board_view .comments{
+    padding: 15px;
+    border: 1px solid rgb(211, 211, 211);
+}
