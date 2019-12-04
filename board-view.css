@@ -13,7 +13,16 @@
     color: #555555;
 }
 
-.board_view .comments{
-    padding: 15px;
+.board_view .comment{
+    padding: 15px 15px 5px 15px;
     border: 1px solid rgb(211, 211, 211);
+}
+
+.board_view .comment .comment-sub{
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+
+.board_view .comment .comment-sub span{
+    color: rgb(156, 156, 156);
 }
