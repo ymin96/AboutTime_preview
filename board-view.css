@@ -26,3 +26,7 @@
 .board_view .comment .comment-sub span{
     color: rgb(156, 156, 156);
 }
+
+.board_view .comment .recomment{
+    font-size: 12px;
+}
