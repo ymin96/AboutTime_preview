@@ -83,19 +83,19 @@
                                 <h5 style="font-weight: bold;">댓글(2)</h5>
                             </div>
                             <div class="comment">
-                                <p class="comment-main">댓글입니다.</p>
+                                <p class="comment-main">댓글입니다.<button onclick="recomment(this)"><span class="glyphicon glyphicon-share-alt recomment-button" aria-hidden="true">답글</span></button></p>
                                 <p class="comment-sub">작성자[ <span>날자</span> ]</p>
                             </div>
-                            <div class="comment">
-                                <p class="recomment"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true">타겟</span></p>
-                                <p class="comment-main">대댓글입니다.</p>
+                            <div class="comment recomment">
+                                <p class="target"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true">타겟</span></p>
+                                <p class="comment-main">대댓글입니다.<button  onclick="recomment(this)"><span class="glyphicon glyphicon-share-alt recomment-button" aria-hidden="true">답글</span></button></p>
                                 <p class="comment-sub">작성자[ <span>날자</span> ]</p>
                             </div>
                         </div>
-                        <div class="commentEdit">
+                        <div class="commentEdit" style="margin-bottom: 20px;">
                             <div class="input-group">
                                 <textarea class="form-control" rows="3" style="resize: none;"></textarea>
-                                <div class="input-group-addon" style="font-weight: bold;">등록</div>
+                                <div class="input-group-addon" style="background-color: #337ab7;border: 1px solid #337ab7;"><a href="#">등록</a></div>
                             </div>
                         </div>
                     </div>
@@ -118,6 +118,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/boardView.js"></script>
 </body>
 
 </html>
