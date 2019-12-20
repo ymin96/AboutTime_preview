@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="common/footer.css">
     <link rel="stylesheet" href="common/layout.css">
     <link rel="stylesheet" href="university_info.css">
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -71,6 +73,9 @@
 
             <div class="container">
                 <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div id="calendar"></div>
+                    </div>
                     <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
                         <div class="headline">
                             <a href="#">정보 게시판</a>
@@ -116,23 +121,26 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center">Kim Yong Hwan</p>
-                    <p class="text-center">e-mail:ymin96@naver.com</p>
-                    <p class="text-center">github:<a href="#">https://github.com/ymin96</a></p>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Kim Yong Hwan</p>
+                        <p class="text-center">e-mail:ymin96@naver.com</p>
+                        <p class="text-center">github:<a href="#">https://github.com/ymin96</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/universityInfo.js"></script>
 </body>
 
 </html>
