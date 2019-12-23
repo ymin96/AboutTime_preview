@@ -11,19 +11,15 @@ function calendarEvent(eventData) {
     var m = date.getMonth();
     var y = date.getFullYear();
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: ['dayGrid'],
+        plugins: ['interaction','dayGrid'],
         header: {
             left: "",
             center: "title",
             //    right: "month,basicWeek,basicDay"
             right: "today prev,next"
         },
+        selectable: true,
         editable: true,
-        titleFormat: {
-            month: "long",
-            week: "long",
-            day: "numeric"
-        },
         locale: 'kr'
     });
     calendar.render();
