@@ -30,15 +30,38 @@ function calendarEvent(eventData) {
             $("#schedule-view").removeClass("hidden");
             $("#schedule-view .header span").html(dateInfo.title);
             $("#schedule-view .contents p").html("· "+dateInfo.extendedProps.contents);
-            $("#view-delete").attr("info-id",dateInfo.publicId);
+            $("#view-delete").attr("info-id",dateInfo.defId);
         }
     });
     calendar.render();
     var evt = {
-        id: 1,
         allDay: true,
         start: "2019-12-24",
         end: "2019-12-25",
+        title: "테스팅",
+        contents: "내용"
+    }
+    calendar.addEvent(evt);
+    var evt = {
+        allDay: true,
+        start: "2019-12-25",
+        end: "2019-12-26",
+        title: "테스팅",
+        contents: "내용"
+    }
+    calendar.addEvent(evt);
+    var evt = {
+        allDay: true,
+        start: "2019-12-10",
+        end: "2019-12-13",
+        title: "테스팅",
+        contents: "내용"
+    }
+    calendar.addEvent(evt);
+    var evt = {
+        allDay: true,
+        start: "2019-12-10",
+        end: "2019-12-13",
         title: "테스팅",
         contents: "내용"
     }
