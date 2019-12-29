@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="common/layout.css">
     <link rel="stylesheet" href="common/content-edge.css">
     <link rel="stylesheet" href="university_info.css">
+    <link rel="stylesheet" href="calculator.css">
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
 </head>
@@ -55,7 +56,318 @@
             </nav>
         </header>
         <div class="calculator">
-            
+            <div class="breadcrumbs">
+                <div class="container">
+                    <h2>학점계산기</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="content-box">
+                            <div class="reg-header">
+                                <h3>학점 계산기</h3>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="worst">
+                                                F학점 포함
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button id="add-subject" type="button" class="btn btn-primary" style="float: right;">과목추가</button>
+                                </div>
+                            </div>
+                            <form class="form-horizontal" style="clear: both;">
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="subject-group">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control subject-title" placeholder="과목명">
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>점수</option>
+                                                    <option value="4.5">A+</option>
+                                                    <option value="4">A</option value="4.5">
+                                                    <option value="3.5">B+</option value="4.5">
+                                                    <option value="3">B</option value="4.5">
+                                                    <option value="2.5">C+</option value="4.5">
+                                                    <option value="2">C</option value="4.5">
+                                                    <option value="1.5">D+</option value="4.5">
+                                                    <option value="1">D</option>
+                                                    <option value="0">F</option value="4.5">
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-4 option">
+                                                <select class="form-control">
+                                                    <option value="" selected disabled hidden>학점</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 col-xs-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="major">
+                                                        전공
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-xs-12 text-right">
+                                    <button type="button" class="btn btn-default" >초기화</button>
+                                    <button type="button" class="btn btn-success" >계산</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-box">
+                            <div class="text-center">
+                                <p style="font-size: 2rem;">전체</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container">
