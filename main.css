@@ -1,3 +1,42 @@
 .navbar{
     margin-bottom: 0;
 }
+
+.main-page .content-sm{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-page .content-sm .sub-title-box{
+    margin-bottom: 50px;
+}
+
+.main-page .banner{
+    border-bottom: 2px solid #AAAAAA;
+}
+
+.main-page .content-sm .sub-title-box h2{
+    color: #666;
+}
+
+.main-page .parallaxBg{
+    background-color: rgb(39, 39, 39);
+    padding: 60px 0;
+    margin-bottom: 10px;
+}
+
+.main-page .parallaxBg .element-box{
+    padding: 15px 0 10px;
+    border: 1px solid #555;
+    color:rgb(233, 232, 232);
+}
+
+.main-page .parallaxBg .element-box .element{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.main-page .parallaxBg .element-box p{
+    margin-top: 5px;
+    color:white
+}
