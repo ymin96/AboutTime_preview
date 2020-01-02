@@ -1,7 +1,3 @@
-$(document).ready(function () {
-    row = $(".form-group").get(0);
-});
-
 $("#add-subject").click(function (e) {
     var standard = $("#standard");
     standard = '<div class="form-group copy">' + standard[0].innerHTML + '</div>';
