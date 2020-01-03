@@ -15,6 +15,12 @@
     border-bottom: 2px solid #AAAAAA;
 }
 
+.main-page .banner img{
+    max-height: 500px;
+    width:100%;
+    object-fit:cover;
+}
+
 .main-page .content-sm .sub-title-box h2{
     color: #666;
 }
