@@ -21,7 +21,8 @@ header{
 }
 
 .navbar-nav{
-    margin-top:10px;
+	margin-top:0;
+	padding-top: 10px;
     background-color:#ffffff;
 }
 
